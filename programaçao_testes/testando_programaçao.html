@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando</title>
+    <style>
+        body {
+            background-color: rgb(176, 236, 116);/*cor de fundo do site*/
+            color: crimson;/*comando para a cor das letras*/
+            font: normal 20pt Arial;/*comando para escolher detalhes da fonte da letras*/
+        }
+        h1 {
+            color: rgb(236, 33, 33);/*h1 é a cor do titulo*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o primeiro programa!</h1><!--h1 é titulo, e marcação em html-->
+    <p>vamos lá!</p>
+    <script>
+        window.alert('Salve amigão, to testando o meu primeiro programa')
+        var nome = window.prompt('Qual é o seu nome amigão?') // a variavel recebe o nome e responde nos outros comandos
+        window.alert('Salve ' + nome + '!')
+        window.confirm('Eu acho que vai ficar bom!')
+        var nota1 = Number.parseFloat(window.prompt('de 0 à 10, que nota você daria? '))
+        var nota2= Number.parseFloat(window.prompt('hm..., num sei não, eudaria outra nota! vamos lá, tente de novo! '))
+        var s = nota1 + nota2
+        window.alert(`Bem, pelo menos o resultado agora ficou melhor, rsrs! pois juntando as duas nota, o meu prograficou com ${s}, kkkk, que show! obrigado!`)
+        document.write(`Muito bem, então para o meu primeiro, acho que a nota <strong>${s}</strong> é uma boa!`)
+    </script>
+</body>
+</html>
